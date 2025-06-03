@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Stock Market Dashboard</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body { font-family: Arial; text-align: center; padding: 20px; }
+    canvas { max-width: 600px; margin: auto; }
+    input { padding: 8px; width: 200px; }
+    button { padding: 8px 12px; }
+  </style>
+</head>
+<body>
+  <h1>📈 Stock Market Dashboard</h1>
+  <input type="text" id="symbol" placeholder="Enter Stock Symbol (e.g. AAPL)" />
+  <button onclick="getStockData()">Fetch</button>
+  <p id="summary"></p>
+  <canvas id="chart" width="600" height="400"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
